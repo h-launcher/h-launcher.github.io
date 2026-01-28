@@ -4,37 +4,37 @@
       "title": "Hotfixes: January 2026",
       "date": "January 27th 2026",
       "description": "Исправлены проблемы с отображением теней, уменьшены задержки на картах NVIDIA. Улучшена стабильность серверов и логика телепортов.",
-      "image": "https://cdn.hytale.com/variants/blog_thumb_289595fcab7ba3f3a048505413ad1f8d_hytale2026_01_13_23_34_48.png",
+      "image": "https://h-launcher.github.io/news/hotfix_jan_2026.png",
       "isMain": true,
       "tag": "HOTFIX",
-      "url": "https://hytale.com/news/2026/01/hotfixes-january-2026"
+      "url": "https://h-launcher.github.io/news/post-1.html"
     },
     {
       "title": "Hytale Patch Notes - Update 2",
       "date": "January 24th 2026",
       "description": "Новые опции кастомизации аватара: маски бандитов, повязки на глаза, клыки вампира и орка. Обновлены визуальные эффекты причесок и добавлена новая броня.",
-      "image": "https://cdn.hytale.com/variants/blog_thumb_e9ac7f05f9c5f040aed38eb226a1872d_blog_cover_option2.png",
+      "image": "https://h-launcher.github.io/news/patch_update_2.png",
       "isMain": false,
       "tag": "ОБНОВЛЕНИЕ",
-      "url": "https://hytale.com/news/2026/01/winter-update-2026"
+      "url": "https://h-launcher.github.io/news/post-2.html"
     },
     {
       "title": "Hytale Patch Notes - Update 1",
       "date": "January 17th 2026",
       "description": "Первое крупное контентное обновление: в мир добавлены динозавры, а также внедрена серия улучшений качества жизни и исправлений багов.",
-      "image": "https://cdn.hytale.com/variants/blog_thumb_4666219169b117610c44205c41707e4f_e208b945a93c8dc6a00a8257309badb9_undergroundjungledinorun_01_raw.png",
+      "image": "https://h-launcher.github.io/news/patch_update_1.png",
       "isMain": false,
       "tag": "ОБНОВЛЕНИЕ",
-      "url": "https://hytale.com/news/2026/01/update-1-patch-notes"
+      "url": "https://h-launcher.github.io/news/post-3.html"
     },
     {
       "title": "Hytale is finally here!",
       "date": "January 13th 2026",
       "description": "Момент настал — Hytale официально вышла в ранний доступ! Мы сдержали обещание запуститься без задержек после возвращения независимости студии.",
-      "image": "https://cdn.hytale.com/variants/blog_thumb_141140f01e6d5efde1b239619412e2d0_image8.png",
+      "image": "https://h-launcher.github.io/news/release_day.png",
       "isMain": false,
       "tag": "РЕЛИЗ",
-      "url": "https://hytale.com/news/2026/01/hytale-launch-announcement"
+      "url": "https://h-launcher.github.io/news/post-4.html"
     }
   ],
   "versions": [
