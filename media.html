@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиа - HLauncher</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .placeholder-container {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: radial-gradient(circle at center, rgba(18, 26, 43, 0.5), transparent);
+        }
+
+        .placeholder-icon {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            color: var(--color-accent-gold);
+            animation: pulse 2s infinite;
+        }
+
+        .placeholder-title {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .placeholder-text {
+            font-size: 1.2rem;
+            color: var(--color-text-muted);
+            max-width: 600px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.png" alt="Логотип HLauncher" class="logo-img">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Главная</a></li>
+            <li><a href="blog.html" class="nav-link">Блог</a></li>
+            <li><a href="media.html" class="nav-link active">Медиа</a></li>
+            <li><a href="community.html" class="nav-link">Сообщество</a></li>
+        </ul>
+        <a href="download.html" class="btn-cta-nav">Скачать</a>
+    </nav>
+
+    <div class="placeholder-container">
+        <div class="placeholder-icon">📷</div>
+        <h1 class="placeholder-title">В разработке</h1>
+        <p class="placeholder-text">Этот раздел находится в стадии активной разработки. Скоро здесь появятся скриншоты,
+            видео и обои.</p>
+        <a href="index.html" class="btn-large" style="margin-top: 2rem; font-size: 1.2rem; padding: 0.8rem 2rem;">На
+            главную</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <img src="logo.png" alt="HLauncher" class="footer-logo">
+            <div class="footer-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия использования</a>
+                <a href="#">Контакты</a>
+            </div>
+            <p style="color: #555; font-size: 0.8rem;">Не связано с Hypixel Studios. Hytale является торговой маркой
+                Hypixel Studios.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

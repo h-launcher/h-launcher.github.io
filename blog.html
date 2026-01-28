@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог - HLauncher</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific Blog Styles override/extensions */
+        .page-header {
+            padding-top: 150px;
+            padding-bottom: 3rem;
+            text-align: center;
+            background: linear-gradient(to bottom, #0b0d12, #151921);
+            position: relative;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--color-accent-gold);
+            box-shadow: 0 0 10px var(--color-accent-gold);
+        }
+
+        .blog-layout {
+            display: flex;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .blog-main {
+            flex: 3;
+        }
+
+        .blog-sidebar {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: 2rem;
+            height: fit-content;
+        }
+
+        .blog-post-row {
+            display: flex;
+            background: var(--color-bg-panel);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .blog-post-row:hover {
+            border-color: var(--color-accent-blue);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-card);
+        }
+
+        .row-img {
+            width: 300px;
+            object-fit: cover;
+            background: #222;
+        }
+
+        .row-content {
+            padding: 2rem;
+            flex-grow: 1;
+        }
+
+        .sidebar-title {
+            font-family: var(--font-heading);
+            color: var(--color-accent-gold);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 0.5rem;
+        }
+
+        .cat-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        .cat-list a:hover {
+            color: var(--color-accent-blue);
+            padding-left: 5px;
+        }
+
+        @media (max-width: 900px) {
+            .blog-layout {
+                flex-direction: column;
+            }
+
+            .blog-post-row {
+                flex-direction: column;
+            }
+
+            .row-img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.png" alt="Логотип HLauncher" class="logo-img">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Главная</a></li>
+            <li><a href="blog.html" class="nav-link active">Блог</a></li>
+            <li><a href="media.html" class="nav-link">Медиа</a></li>
+            <li><a href="community.html" class="nav-link">Сообщество</a></li>
+        </ul>
+        <a href="download.html" class="btn-cta-nav">Скачать</a>
+    </nav>
+
+    <header class="page-header">
+        <h1 class="section-title">Блог Разработки</h1>
+        <p style="color: var(--color-text-muted);">Обновления, патчноуты и новости от команды.</p>
+    </header>
+
+    <div class="blog-layout">
+        <main class="blog-main">
+            <!-- Post 1 -->
+            <article class="blog-post-row">
+                <img src="news/hotfix_jan_2026.png" alt="Hotfixes" class="row-img">
+                <div class="row-content">
+                    <div class="card-meta">28 Января 2026</div>
+                    <h2 class="card-title">Хотфиксы: Январь 2026</h2>
+                    <p class="card-excerpt">Мы исправили несколько проблем со стабильностью, о которых сообщало
+                        сообщество, касающихся интеграции шейдеров, а также улучшили работу серверов.</p>
+                    <a href="news/post-1.html" class="read-more">Читать далее</a>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="blog-post-row">
+                <img src="news/patch_update_2.png" alt="Update 2" class="row-img">
+                <div class="row-content">
+                    <div class="card-meta">24 Января 2026</div>
+                    <h2 class="card-title">Hytale Patch Notes - Update 2</h2>
+                    <p class="card-excerpt">Косметика, кастомизация, WorldGen V2, изменения в фермерстве и улучшенная
+                        стабильность. Узнайте подробности второго обновления!</p>
+                    <a href="news/post-2.html" class="read-more">Читать далее</a>
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="blog-post-row">
+                <img src="news/patch_update_1.png" alt="Update 1" class="row-img">
+                <div class="row-content">
+                    <div class="card-meta">17 Января 2026</div>
+                    <h2 class="card-title">Hytale Patch Notes - Update 1</h2>
+                    <p class="card-excerpt">Добро пожаловать в первое обновление! Динозавры в подземных джунглях, новые
+                        звуки и баланс инвентаря.</p>
+                    <a href="news/post-3.html" class="read-more">Читать далее</a>
+                </div>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="blog-post-row">
+                <img src="news/release_day.png" alt="Hytale Release" class="row-img">
+                <div class="row-content">
+                    <div class="card-meta">13 Января 2026</div>
+                    <h2 class="card-title">Hytale наконец-то вышел!</h2>
+                    <p class="card-excerpt">Момент настал, сегодня Hytale выходит в Ранний Доступ! Узнайте, что вас ждет
+                        в первой версии игры.</p>
+                    <a href="news/post-4.html" class="read-more">Читать далее</a>
+                </div>
+            </article>
+        </main>
+
+        <aside class="blog-sidebar">
+            <h3 class="sidebar-title">Категории</h3>
+            <ul class="cat-list">
+                <li><a href="#">Анонсы</a></li>
+                <li><a href="#">Патчноуты</a></li>
+                <li><a href="#">Сообщество</a></li>
+                <li><a href="#">Разработка</a></li>
+            </ul>
+
+            <h3 class="sidebar-title" style="margin-top: 2rem;">Архив</h3>
+            <ul class="cat-list">
+                <li><a href="#">Январь 2026</a></li>
+                <li><a href="#">Декабрь 2025</a></li>
+                <li><a href="#">Ноябрь 2025</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <img src="logo.png" alt="HLauncher" class="footer-logo">
+            <div class="footer-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия использования</a>
+                <a href="#">Контакты</a>
+            </div>
+            <p style="color: #555; font-size: 0.8rem;">Не связано с Hypixel Studios. Hytale является торговой маркой
+                Hypixel Studios.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
