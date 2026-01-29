@@ -110,6 +110,48 @@ ul {
     width: 100%;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-border);
+    transition: all 0.3s;
+    color: var(--color-text-muted);
+}
+
+.nav-social-link:hover {
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+.nav-social-link.discord:hover {
+    background: #5865F2;
+    border-color: #5865F2;
+    box-shadow: 0 0 15px rgba(88, 101, 242, 0.4);
+}
+
+.nav-social-link.kofi:hover {
+    background: #FF5E5B;
+    border-color: #FF5E5B;
+    box-shadow: 0 0 15px rgba(255, 94, 91, 0.4);
+}
+
+.nav-social-link svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
 .btn-cta-nav {
     background: linear-gradient(45deg, #1e3c5e, #2a5275);
     border: 2px solid var(--color-accent-blue);
@@ -122,8 +164,9 @@ ul {
     box-shadow: var(--glow-blue);
     transition: all 0.3s;
     letter-spacing: 1px;
-    /* Chamfered corners illusion using clip-path could work, but standard border-radius is safer for now */
     border-radius: 4px;
+    display: flex;
+    align-items: center;
 }
 
 .btn-cta-nav:hover {
