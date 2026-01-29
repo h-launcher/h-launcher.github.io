@@ -222,6 +222,26 @@
         </div>
     </footer>
 
+    <!-- Support Modal -->
+    <div id="support-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeSupportModal()">&times;</button>
+            <div class="modal-icon">☕</div>
+            <h2 class="modal-title">Спасибо за загрузку!</h2>
+            <p class="modal-text">
+                HLauncher существует благодаря поддержке сообщества. <br>
+                Если вам нравится наш проект, пожалуйста, рассмотрите возможность поддержать нас на <b>Ko-Fi</b>, чтобы
+                мы могли оплачивать сервера и продолжать развитие.
+            </p>
+            <div class="modal-actions">
+                <a href="https://ko-fi.com/hlauncher" target="_blank" class="btn-support" onclick="closeSupportModal()">
+                    Поддержать проект
+                </a>
+                <button class="btn-skip" onclick="closeSupportModal()">Нет, спасибо</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 

@@ -24,7 +24,29 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+    // Modal Logic
+    const downloadBtn = document.querySelector('.btn-mega-download');
+    // Only if we are on the download page and button exists
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', () => {
+            openSupportModal();
+        });
+    }
 });
+
+function openSupportModal() {
+    const modal = document.getElementById('support-modal');
+    if (modal) {
+        modal.classList.add('active');
+    }
+}
+
+function closeSupportModal() {
+    const modal = document.getElementById('support-modal');
+    if (modal) {
+        modal.classList.remove('active');
+    }
+}
 
 async function getDownloadCount() {
     const owner = 'h-launcher';
