@@ -176,6 +176,56 @@ ul {
     border-color: #fff;
 }
 
+/* Hide mobile actions on desktop */
+.nav-actions-mobile,
+.hamburger {
+    display: none;
+}
+
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+}
+
+.lang-btn {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.lang-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.lang-btn.active {
+    color: var(--color-accent-gold);
+}
+
+.lang-sep {
+    color: var(--color-border);
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .lang-switcher {
+        margin-left: 0;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
+
 /* --- Hero Section --- */
 .hero {
     position: relative;
@@ -962,22 +1012,125 @@ footer {
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .navbar {
-        padding: 1rem;
+        padding: 1rem 1.5rem;
     }
 
     .nav-links {
-        display: none;
-        /* Add mobile toggle via JS later */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 300px;
+        background: rgba(8, 12, 20, 0.98);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+        border-left: 1px solid var(--color-border);
+        z-index: 1000;
+        /* Padding top to avoid overlapping with absolute close button if we have one, 
+           or just center safely */
     }
 
+    .nav-links.active {
+        right: 0;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .hamburger .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
+    /* Hamburger Animation */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-actions {
+        display: none;
+        /* Hide default actions in header, maybe move to menu? */
+    }
+
+    /* Re-add actions inside menu for mobile if needed, or keep simple */
+    .nav-links .nav-actions-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    /* Hero adjustments */
     .hero-content {
         padding: 1rem;
     }
 
     .hero-tagline {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .hero-sub {
+        font-size: 1rem;
+    }
+
+    .main-logo {
+        max-width: 90%;
+    }
+
+    /* Grid adjustments */
+    .news-grid,
+    .specs-grid,
+    .req-grid,
+    .platform-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Download Page Adjustments */
+    .download-title {
+        font-size: 2.2rem;
+    }
+
+    .btn-mega-download {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .download-box {
+        padding: 2rem 1.5rem;
+    }
+
+    /* Footer adjustments */
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
+
+
 
 /* --- Support Modal --- */
 .modal-overlay {

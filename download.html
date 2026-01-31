@@ -17,11 +17,38 @@
                 <img src="logo.png" alt="Логотип HLauncher" class="logo-img">
             </a>
         </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <ul class="nav-links">
-            <li><a href="index.html" class="nav-link">Главная</a></li>
-            <li><a href="blog.html" class="nav-link">Блог</a></li>
-            <li><a href="media.html" class="nav-link">Медиа</a></li>
-            <li><a href="community.html" class="nav-link">Сообщество</a></li>
+            <li><a href="index.html" class="nav-link" data-i18n="nav.home">Главная</a></li>
+            <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Блог</a></li>
+            <li><a href="media.html" class="nav-link" data-i18n="nav.media">Медиа</a></li>
+            <li><a href="community.html" class="nav-link" data-i18n="nav.community">Сообщество</a></li>
+            <div class="nav-actions-mobile">
+                <a href="https://discord.gg/BG65zcydgT" target="_blank" class="nav-social-link discord"
+                    title="Join our Discord">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419z" />
+                    </svg>
+                </a>
+                <a href="https://ko-fi.com/hlauncher" target="_blank" class="nav-social-link kofi"
+                    title="Support us on Ko-Fi">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z" />
+                    </svg>
+                </a>
+                <a href="download.html" class="btn-cta-nav" data-i18n="nav.download">Скачать</a>
+                <div class="lang-switcher">
+                    <a href="#" class="lang-btn" data-lang="ru">RU</a>
+                    <span class="lang-sep">/</span>
+                    <a href="#" class="lang-btn" data-lang="en">EN</a>
+                </div>
+            </div>
         </ul>
         <div class="nav-actions">
             <a href="https://discord.gg/BG65zcydgT" target="_blank" class="nav-social-link discord"
@@ -38,7 +65,12 @@
                         d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z" />
                 </svg>
             </a>
-            <a href="download.html" class="btn-cta-nav">Скачать</a>
+            <a href="download.html" class="btn-cta-nav" data-i18n="nav.download">Скачать</a>
+            <div class="lang-switcher">
+                <a href="#" class="lang-btn" data-lang="ru">RU</a>
+                <span class="lang-sep">/</span>
+                <a href="#" class="lang-btn" data-lang="en">EN</a>
+            </div>
         </div>
     </nav>
 
@@ -52,14 +84,15 @@
 
         <div class="download-card-main">
             <div class="h-icon-glow">H</div>
-            <h1 class="download-title">Начни Своё Приключение</h1>
-            <p class="download-subtitle">Загрузите HLauncher и погрузитесь в мир Hytale с лучшими модами и оптимизацией.
+            <h1 class="download-title" data-i18n="download.title">Начни Своё Приключение</h1>
+            <p class="download-subtitle" data-i18n="download.subtitle">Загрузите HLauncher и погрузитесь в мир Hytale с
+                лучшими модами и оптимизацией.
             </p>
 
             <div class="version-badge">
-                <span class="v-label">Версия</span>
+                <span class="v-label" data-i18n="download.version">Версия</span>
                 <span class="v-num">0.1.1 beta</span>
-                <span class="v-date">Обновлено: 29 Янв 2026</span>
+                <span class="v-date"><span data-i18n="download.updated">Обновлено</span>: 29 Янв 2026</span>
             </div>
 
             <div class="actions-area">
@@ -68,7 +101,7 @@
                     <img src="windows.png" alt="Windows" class="btn-icon-img"
                         style="height: 40px; width: auto; margin-right: 15px; filter: brightness(100);">
                     <div class="btn-text-group">
-                        <span class="btn-main-text">Скачать для Windows</span>
+                        <span class="btn-main-text" data-i18n="download.btn_win">Скачать для Windows</span>
                         <span class="btn-sub-text">Installer (x64) • 163.35 MB</span>
                     </div>
                 </a>
@@ -77,11 +110,11 @@
 
         <!-- Specs Section -->
         <div class="specs-section">
-            <h2 class="specs-title">Системные Требования</h2>
+            <h2 class="specs-title" data-i18n="specs.title">Системные Требования</h2>
             <div class="specs-grid">
                 <!-- Minimum -->
                 <div class="spec-card min">
-                    <h3>Минимальные требования</h3>
+                    <h3 data-i18n="specs.min">Минимальные требования</h3>
                     <p class="spec-subtitle">1080p @ 30 FPS @ 192 View Distance</p>
 
                     <div class="spec-group">
@@ -141,8 +174,8 @@
 
                 <!-- Recommended -->
                 <div class="spec-card rec">
-                    <div class="rec-badge">Рекомендуем</div>
-                    <h3>Рекомендуемые требования</h3>
+                    <div class="rec-badge" data-i18n="specs.rec_badge">Рекомендуем</div>
+                    <h3 data-i18n="specs.rec">Рекомендуемые требования</h3>
                     <p class="spec-subtitle">1080p @ 60 FPS @ 384 View Distance</p>
 
                     <div class="spec-group">
@@ -210,11 +243,12 @@
             <div class="footer-links">
                 <a href="https://ko-fi.com/hlauncher" target="_blank" style="color:var(--color-accent-gold);">Ko-Fi</a>
                 <a href="https://discord.gg/BG65zcydgT" target="_blank" style="color:#5865F2;">Discord</a>
-                <a href="#">Политика конфиденциальности</a>
-                <a href="#">Условия использования</a>
-                <a href="#">Контакты</a>
+                <a href="#" data-i18n="app.footer.privacy">Политика конфиденциальности</a>
+                <a href="#" data-i18n="app.footer.terms">Условия использования</a>
+                <a href="#" data-i18n="app.footer.contacts">Контакты</a>
             </div>
-            <p style="color: #555; font-size: 0.8rem;">Не связано с Hypixel Studios. Hytale является торговой маркой
+            <p style="color: #555; font-size: 0.8rem;" data-i18n="app.footer.disclaimer">Не связано с Hypixel Studios.
+                Hytale является торговой маркой
                 Hypixel Studios.</p>
         </div>
     </footer>
