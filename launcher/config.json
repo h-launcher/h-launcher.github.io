@@ -68,7 +68,7 @@
     }
   ],
   "launcher": {
-    "version": "0.2 beta",
+    "version": "0.2.1 beta",
     "url": "https://github.com/h-launcher/h-launcher.github.io/releases/download/Release/HLauncher.exe"
   },
   "jre": {
