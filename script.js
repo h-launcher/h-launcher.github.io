@@ -113,6 +113,9 @@ const translations = {
         'modal.text': 'HLauncher — бесплатный проект с открытым кодом. Если вам нравится, поддержите разработку!',
         'modal.support': 'Поддержать на Ko-Fi',
         'modal.skip': 'Спасибо, я просто скачаю',
+        'modal.download_title': 'Спасибо за загрузку!',
+        'modal.download_text': 'HLauncher существует благодаря поддержке сообщества. <br>Если вам нравится наш проект, пожалуйста, рассмотрите возможность поддержать нас на <b>Ko-Fi</b>, чтобы мы могли оплачивать сервера и продолжать развитие.',
+        'modal.btn_support': 'Поддержать проект',
         // Secondary Pages
         'app.back_home': 'На главную',
         'app.back_blog': '← Вернуться в блог',
@@ -295,6 +298,9 @@ const translations = {
         'modal.text': 'HLauncher is a free open-source project. If you like it, please consider supporting development!',
         'modal.support': 'Support on Ko-Fi',
         'modal.skip': 'Thanks, just downloading',
+        'modal.download_title': 'Thank you for downloading!',
+        'modal.download_text': 'HLauncher exists thanks to community support. <br>If you like our project, please consider supporting us on <b>Ko-Fi</b> so we can pay for servers and continue development.',
+        'modal.btn_support': 'Support the Project',
         // Secondary Pages
         'app.back_home': 'Back to Home',
         'app.back_blog': '← Back to Blog',
