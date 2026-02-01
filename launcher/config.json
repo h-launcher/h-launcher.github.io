@@ -39,6 +39,13 @@
   ],
   "versions": [
     {
+      "id": "2026.01.29-301e13929",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/17.pwr",
+      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.29-301e13929.json",
+      "date": "2026-01-29",
+      "type": "snapshot"
+    },
+    {
       "id": "2026.01.28-87d03be09",
       "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/7.pwr",
       "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.28-87d03be09.json",
