@@ -6,43 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Патчноуты Hytale - Update 2 (Январь 2026)</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        .post-header {
+        /* Стили для страницы поста (внутренние, так как styles.css менять нельзя) */
+        .post-container {
             padding-top: 150px;
+            padding-bottom: 4rem;
+            max-width: 900px;
+            margin: 0 auto;
+            min-height: 80vh;
+        }
+
+        .post-header {
             text-align: center;
-            background: linear-gradient(to bottom, #0b0d12, #151921);
-            padding-bottom: 3rem;
+            margin-bottom: 3rem;
         }
 
         .post-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-            background: var(--color-bg-panel);
-            border-radius: 8px;
-            border: 1px solid var(--color-border);
-            font-size: 1.1rem;
-            color: #ddd;
+            padding: 3rem;
         }
 
         .post-content h2 {
             color: var(--color-accent-gold);
-            margin-top: 2rem;
+            margin-top: 2.5rem;
             margin-bottom: 1rem;
             font-family: var(--font-heading);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding-bottom: 0.5rem;
+            font-size: 1.8rem;
         }
 
         .post-content h3 {
             color: var(--color-accent-blue);
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
             font-family: var(--font-heading);
+            font-size: 1.4rem;
         }
 
         .post-content p {
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            color: #ddd;
+            line-height: 1.7;
         }
 
         .post-content ul {
@@ -54,98 +62,108 @@
 
         .post-content li {
             margin-bottom: 0.5rem;
+            padding-left: 0.5rem;
         }
 
         .back-link {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             margin-bottom: 2rem;
             color: var(--color-accent-blue);
             font-weight: 600;
+            transition: transform 0.2s;
         }
 
         .back-link:hover {
-            text-decoration: underline;
+            transform: translateX(-5px);
+            text-decoration: none;
+            color: var(--color-accent-blue-dark);
         }
 
         .post-image {
             width: 100%;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            border-radius: var(--radius-md);
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow-glass);
+            border: 1px solid var(--glass-border);
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .post-content {
+                padding: 1.5rem;
+            }
+
+            .post-title {
+                font-size: 2rem !important;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo-container">
-            <a href="../index.html">
-                <img src="../logo.png" alt="Логотип HLauncher" class="logo-img">
+    <!-- Liquid Navigation -->
+    <nav class="navbar-container">
+        <div class="liquid-nav fade-in">
+            <a href="../index.html" class="nav-brand">
+                <div class="brand-logo">H</div>
+                <div class="brand-text">HYTALE <span>LAUNCHER</span></div>
             </a>
-        </div>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html" class="nav-link" data-i18n="nav.home">Главная</a></li>
-            <li><a href="../blog.html" class="nav-link active" data-i18n="nav.blog">Блог</a></li>
-            <li><a href="../media.html" class="nav-link" data-i18n="nav.media">Медиа</a></li>
-            <li><a href="../community.html" class="nav-link" data-i18n="nav.community">Сообщество</a></li>
-            <div class="nav-actions-mobile">
-                <a href="https://discord.gg/BG65zcydgT" target="_blank" class="nav-social-link discord"
-                    title="Join our Discord">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419z" />
-                    </svg>
-                </a>
-                <a href="https://ko-fi.com/hlauncher" target="_blank" class="nav-social-link kofi"
-                    title="Support us on Ko-Fi">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z" />
-                    </svg>
-                </a>
-                <a href="../download.html" class="btn-cta-nav">Скачать</a>
+
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item" data-i18n="nav.home">Главная</a>
+                <a href="../blog.html" class="nav-item active" data-i18n="nav.blog">Блог</a>
+                <a href="../media.html" class="nav-item" data-i18n="nav.media">Медиа</a>
+                <a href="../community.html" class="nav-item" data-i18n="nav.community">Сообщество</a>
             </div>
-        </ul>
-        <div class="nav-actions">
-            <a href="https://discord.gg/BG65zcydgT" target="_blank" class="nav-social-link discord"
-                title="Join our Discord">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419z" />
-                </svg>
-            </a>
-            <a href="https://ko-fi.com/hlauncher" target="_blank" class="nav-social-link kofi"
-                title="Support us on Ko-Fi">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z" />
-                </svg>
-            </a>
-            <a href="../download.html" class="btn-cta-nav" data-i18n="nav.download">Скачать</a>
-            <div class="lang-switcher">
-                <a href="#" class="lang-btn" data-lang="ru">RU</a>
-                <span class="lang-sep">/</span>
-                <a href="#" class="lang-btn" data-lang="en">EN</a>
+
+            <div class="nav-actions">
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <span class="lang-sep">/</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+
+                <div class="nav-sep"></div>
+
+                <a href="https://discord.gg/BG65zcydgT" target="_blank" class="btn-icon-nav" title="Discord">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor" stroke="none" class="lucide lucide-discord">
+                        <path
+                            d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041-.001-.09-.045-.106a12.89 12.89 0 0 1-1.883-.895.057.057 0 0 1-.008-.095c.164-.122.327-.249.486-.38a.057.057 0 0 1 .06-.007c3.987 1.815 8.314 1.815 12.247 0a.058.058 0 0 1 .06.007c.158.131.32.258.484.38a.058.058 0 0 1-.008.096c-.604.33-1.23.632-1.883.894-.044.017-.066.065-.045.106.353.699.765 1.366 1.226 1.994a.078.078 0 0 0 .084.028 19.92 19.92 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.066.066 0 0 0-.031-.027ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.086 2.157 2.419 0 1.334-.956 2.419-2.157 2.419Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.086 2.157 2.419 0 1.334-.946 2.419-2.157 2.419Z" />
+                    </svg>
+                </a>
+                <a href="https://ko-fi.com/hlauncher" target="_blank" class="btn-icon-nav" title="Support us">
+                    <i data-lucide="coffee"></i>
+                </a>
+                <a href="../download.html" class="btn-cta-small" data-i18n="nav.download">Скачать</a>
             </div>
         </div>
     </nav>
 
-    <header class="post-header">
-        <h1 class="section-title" data-i18n="news.2.title">Патчноуты Hytale - Update 2</h1>
-        <p style="color: var(--color-accent-gold); margin-top: 1rem;" data-i18n="date.jan24">24 Января 2026</p>
-    </header>
+    <div class="post-container">
+        <!-- Header -->
+        <div class="post-header fade-in delay-100">
+            <a href="../blog.html" class="back-link" data-i18n="app.back_blog">
+                <i data-lucide="arrow-left"></i>
+                Вернуться в блог
+            </a>
+            <h1 class="hero-title text-gradient post-title" data-i18n="news.2.title"
+                style="font-size: 3rem; margin-bottom: 0.5rem; display: block;">
+                Патчноуты Hytale - Update 2
+            </h1>
+            <p style="color: var(--color-accent-gold); font-size: 1.1rem; font-weight: 500;" data-i18n="date.jan24">
+                24 Января 2026
+            </p>
+        </div>
 
-    <div class="section">
-        <div class="post-content">
-            <a href="../blog.html" class="back-link" data-i18n="app.back_blog">&larr; Вернуться в блог</a>
-
-            <img src="patch_update_2.png" alt="Hytale Update 2" class="post-image">
+        <!-- Content -->
+        <div class="glass-panel post-content fade-in delay-200">
+            <img src="patch_update_2.png" alt="Hytale Update 2" class="post-image"
+                onerror="this.src='https://placehold.co/900x500/222/999?text=Hytale+Update+2'">
 
             <h2 data-i18n="cat.custom">Косметика и Кастомизация</h2>
             <p data-i18n="p2.custom_intro">Добавлены новые опции кастомизации аватара для всех:</p>
@@ -164,8 +182,7 @@
             </ul>
 
             <p data-i18n="p2.armor_toggle">Добавлены новые переключатели видимости слотов брони рядом с экипированной
-                броней, доступные прямо в
-                панели персонажа. Владельцы серверов могут отключать эту функцию.</p>
+                броней, доступные прямо в панели персонажа. Владельцы серверов могут отключать эту функцию.</p>
 
             <h2 data-i18n="cat.game">Геймплей и Баланс</h2>
             <ul data-i18n="p2.ul3">
@@ -237,23 +254,49 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <img src="../logo.png" alt="HLauncher" class="footer-logo">
+            <div class="footer-brand">
+                <div style="font-weight:700; font-size:1.2rem; color:#fff; display:flex; gap:10px; align-items:center;">
+                    <div
+                        style="width:24px; height:24px; background:var(--color-accent-green); border-radius:6px; display:flex; align-items:center; justify-content:center;">
+                        H</div>
+                    HLauncher
+                </div>
+                <p style="font-size:0.8rem; color:var(--color-text-muted); margin-top:0.5rem;"
+                    data-i18n="app.footer.disclaimer">
+                    Не связано с Hypixel Studios. Hytale является торговой маркой Hypixel Studios.
+                </p>
+            </div>
+
             <div class="footer-links">
-                <a href="https://ko-fi.com/hlauncher" target="_blank" style="color:var(--color-accent-gold);">Ko-Fi</a>
-                <a href="https://discord.gg/BG65zcydgT" target="_blank" style="color:#5865F2;">Discord</a>
                 <a href="#" data-i18n="app.footer.privacy">Политика конфиденциальности</a>
-                <a href="#" data-i18n="app.footer.terms">Условия использования</a>
+                <a href="#" data-i18n="app.footer.terms">Условия</a>
                 <a href="#" data-i18n="app.footer.contacts">Контакты</a>
             </div>
-            <p style="color: #555; font-size: 0.8rem;" data-i18n="app.footer.disclaimer">Не связано с Hypixel Studios.
-                Hytale является торговой маркой
-                Hypixel Studios.</p>
         </div>
     </footer>
 
     <script src="../script.js"></script>
+    <script>
+        // Init Icons
+        lucide.createIcons();
+
+        // Simple Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.post-header, .post-content').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 
 </html>
