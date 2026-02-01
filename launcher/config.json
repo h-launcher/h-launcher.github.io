@@ -40,31 +40,39 @@
   "versions": [
     {
       "id": "2026.01.28-87d03be09",
-      "url": "https://pub-8bd84ad91fe24e2c81d49c6383e1c3f9.r2.dev/2026.01.28-87d03be09.rar",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/7.pwr",
+      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.13-dcad8778f.json",
       "date": "2026-01-28",
       "type": "release"
     },
     {
       "id": "2026.01.24-6e2d4fc36",
-      "url": "https://pub-8bd84ad91fe24e2c81d49c6383e1c3f9.r2.dev/2026.01.24-6e2d4fc36.rar",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/5.pwr",
+      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.24-6e2d4fc36.json",
       "date": "2026-01-24",
       "type": "release"
     },
     {
       "id": "2026.01.17-4b0f30090",
-      "url": "https://pub-8bd84ad91fe24e2c81d49c6383e1c3f9.r2.dev/2026.01.17-4b0f30090.rar",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/4.pwr",
+      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.17-4b0f30090.json",
       "date": "2026-01-17",
       "type": "release"
     },
     {
       "id": "2026.01.13-dcad8778f",
-      "url": "https://pub-8bd84ad91fe24e2c81d49c6383e1c3f9.r2.dev/2026.01.13-dcad8778f.rar",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/1.pwr",
+      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.13-dcad8778f.json",
       "date": "2026-01-13",
       "type": "release"
     }
   ],
   "launcher": {
-    "version": "0.1.2 beta",
+    "version": "0.2 beta",
     "url": "https://github.com/h-launcher/h-launcher.github.io/releases/download/Release/HLauncher.exe"
+  },
+  "jre": {
+    "id": "jre-25.0.1_8",
+    "url": "https://launcher.hytale.com/redist/jre/windows/amd64/jre-25.0.1_8.zip"
   }
 }
