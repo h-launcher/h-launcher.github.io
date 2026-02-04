@@ -39,64 +39,152 @@
   ],
   "versions": [
     {
-      "id": "2026.01.29-301e13929",
+      "id": "2026.01.29-301e13929 (pre-release)",
       "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/17.pwr",
-      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.29-301e13929.json",
       "date": "2026-01-29",
       "type": "snapshot"
     },
     {
       "id": "2026.01.28-87d03be09",
       "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/7.pwr",
-      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.28-87d03be09.json",
       "date": "2026-01-28",
       "type": "release"
     },
     {
+      "id": "2026.01.28-87d03be09 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/16.pwr",
+      "date": "2026-01-28",
+      "type": "snapshot"
+    },
+    {
       "id": "2026.01.27-734d39026",
       "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/6.pwr",
-      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.27-734d39026.json",
       "date": "2026.01.27",
       "type": "release"
     },
     {
+      "id": "2026.01.27-734d39026 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/15.pwr",
+      "date": "2026-01-27",
+      "type": "snapshot"
+    },
+    {
+      "id": "2026.01.26-57a62ca8d (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/14.pwr",
+      "date": "2026-01-26",
+      "type": "snapshot"
+    },
+    {
+      "id": "2026.01.26-9bf507572 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/13.pwr",
+      "date": "2026-01-26",
+      "type": "snapshot"
+    },
+    {
       "id": "2026.01.24-6e2d4fc36",
       "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/5.pwr",
-      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.24-6e2d4fc36.json",
       "date": "2026-01-24",
       "type": "release"
     },
     {
+      "id": "2026.01.23-6e2d4fc36 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/12.pwr",
+      "date": "2026-01-23",
+      "type": "snapshot"
+    },
+    {
+      "id": "2026.01.23-d5ecebca9 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/11.pwr",
+      "date": "2026-01-23",
+      "type": "snapshot"
+    },
+    {
+      "id": "2026.01.22-6f8bdbdc4 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/10.pwr",
+      "date": "2026-01-22",
+      "type": "snapshot"
+    },
+    {
+      "id": "2026.01.22-a60fdd027 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/9.pwr",
+      "date": "2026-01-22",
+      "type": "snapshot"
+    },
+    {
       "id": "2026.01.17-4b0f30090",
       "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/4.pwr",
-      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.17-4b0f30090.json",
       "date": "2026-01-17",
       "type": "release"
     },
     {
+      "id": "2026.01.17-a4cc0e7dd (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/8.pwr",
+      "date": "2026-01-17",
+      "type": "snapshot"
+    },
+    {
+      "id": "2026.01.17-4b0f30090 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/7.pwr",
+      "date": "2026-01-17",
+      "type": "snapshot"
+    },
+    {
+      "id": "2026.01.16-5d02071f7 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/6.pwr",
+      "date": "2026-01-16",
+      "type": "snapshot"
+    },
+    {
+      "id": "2026.01.16-c508b9acd (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/5.pwr",
+      "date": "2026-01-16",
+      "type": "snapshot"
+    },
+    {
       "id": "2026.01.15-c04fdfe10",
       "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/3.pwr",
-      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.15-c04fdfe10.json",
       "date": "2026-01-15",
       "type": "release"
     },
     {
+      "id": "2026.01.15-c04fdfe10 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/4.pwr",
+      "date": "2026-01-15",
+      "type": "snapshot"
+    },
+    {
+      "id": "2026.01.14-3e7a0ba6c (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/3.pwr",
+      "date": "2026-01-14",
+      "type": "snapshot"
+    },
+    {
       "id": "2026.01.13-50e69c385",
       "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/2.pwr",
-      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.13-50e69c385.json",
       "date": "2026-01-13",
       "type": "release"
     },
     {
       "id": "2026.01.13-dcad8778f",
       "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/1.pwr",
-      "patchUrl": "https://raw.githubusercontent.com/h-launcher/h-launcher.github.io/refs/heads/main/launcher/patches/2026.01.13-dcad8778f.json",
       "date": "2026-01-13",
       "type": "release"
+    },
+    {
+      "id": "2026.01.13-50e69c385 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/2.pwr",
+      "date": "2026-01-13",
+      "type": "snapshot"
+    },
+    {
+      "id": "2026.01.13-776e44148 (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/1.pwr",
+      "date": "2026-01-13",
+      "type": "snapshot"
     }
   ],
   "launcher": {
-    "version": "0.3.1 beta",
+    "version": "0.4 beta",
     "url": "https://github.com/h-launcher/h-launcher.github.io/releases/download/Release/HLauncher.exe"
   },
   "jre": {
