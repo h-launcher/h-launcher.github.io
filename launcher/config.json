@@ -39,6 +39,18 @@
   ],
   "versions": [
     {
+      "id": "2026.02.06-aa1b071c2",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/8.pwr",
+      "date": "2026.02.06",
+      "type": "release"
+    },
+    {
+      "id": "2026.02.06-0baf7c5aa (pre-release)",
+      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/20.pwr",
+      "date": "2026.02.06",
+      "type": "snapshot"
+    },
+    {
       "id": "2026.01.29-301e13929 (pre-release)",
       "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/17.pwr",
       "date": "2026-01-29",
