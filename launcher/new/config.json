@@ -37,56 +37,20 @@
       "url": "https://h-launcher.github.io/news/post-4.html"
     }
   ],
-  "versions": [
-    {
-      "id": "2026.01.29-301e13929",
-      "url": "https://game-patches.hytale.com/patches/windows/amd64/pre-release/0/17.pwr",
-      "date": "2026-01-29",
-      "type": "snapshot"
-    },
-    {
-      "id": "2026.01.28-87d03be09",
-      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/7.pwr",
-      "date": "2026-01-28",
-      "type": "release"
-    },
-    {
-      "id": "2026.01.27-734d39026",
-      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/6.pwr",
-      "date": "2026.01.27",
-      "type": "release"
-    },
-    {
-      "id": "2026.01.24-6e2d4fc36",
-      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/5.pwr",
-      "date": "2026-01-24",
-      "type": "release"
-    },
-    {
-      "id": "2026.01.17-4b0f30090",
-      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/4.pwr",
-      "date": "2026-01-17",
-      "type": "release"
-    },
-    {
-      "id": "2026.01.15-c04fdfe10",
-      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/3.pwr",
-      "date": "2026-01-15",
-      "type": "release"
-    },
-    {
-      "id": "2026.01.13-50e69c385",
-      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/2.pwr",
-      "date": "2026-01-13",
-      "type": "release"
-    },
-    {
-      "id": "2026.01.13-dcad8778f",
-      "url": "https://game-patches.hytale.com/patches/windows/amd64/release/0/1.pwr",
-      "date": "2026-01-13",
-      "type": "release"
-    }
-  ],
+  "versions": {
+    "release": [
+      {
+        "id": "8",
+        "name": "2026.02.06-aa1b071c2"
+      }
+    ],
+    "snapshot": [
+      {
+        "id": "22",
+        "name": "2026.02.11-255364B8E"
+      }
+    ]
+  },
   "launcher": {
     "version": "0.4.2 beta",
     "url": "https://github.com/h-launcher/h-launcher.github.io/releases/download/Release/HLauncher.exe"
