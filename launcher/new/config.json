@@ -52,8 +52,9 @@
     ]
   },
   "launcher": {
-    "version": "0.5.1 beta",
-    "url": "https://github.com/h-launcher/h-launcher.github.io/releases/download/Release/HLauncher.exe"
+    "version": "0.6 beta",
+    "url": "https://github.com/h-launcher/h-launcher.github.io/releases/download/Release/HLauncher.exe",
+    "url_linux": "https://github.com/h-launcher/h-launcher.github.io/releases/download/Release-Linux/HLauncher"
   },
   "jre": {
     "id": "jre-25.0.1_8",
