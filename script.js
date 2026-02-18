@@ -147,6 +147,8 @@ const translations = {
         'date.jan26': 'Январь 2026',
         'date.dec25': 'Декабрь 2025',
         'date.nov25': 'Ноябрь 2025',
+        'date.feb17': '17 Февраля 2026',
+        'date.feb11': '11 Февраля 2026',
         'date.jan28': '28 Января 2026',
         'date.jan24': '24 Января 2026',
         'date.jan17': '17 Января 2026',
@@ -155,6 +157,7 @@ const translations = {
         'news.read_more_long': 'Читать далее',
         // Tags
         'tag.hotfix': 'Хотфикс',
+        'tag.dev': 'Разработка',
         'tag.update': 'Обновление',
         'tag.event': 'Событие',
         // Sidebar Pro
@@ -260,7 +263,114 @@ const translations = {
         'p4.text_combat': 'Веселый мобильный бой с разнообразным оружием и система фермерства с множеством культур.',
         'p4.h_thanks': 'Спасибо',
         'p4.text_thanks': 'Все мы в Hypixel Studios рады наконец выпустить Hytale для сообщества, которое пережило столько взлетов и падений. Ваш постоянный восторг сделал это возможным. Слов недостаточно, чтобы выразить нашу благодарность.',
-        'p4.text_final': 'Большое спасибо от всей команды!'
+        'p4.text_final': 'Большое спасибо от всей команды!',
+
+        // Post 5
+        'news.5.title': 'NPC Technical Rundown',
+        'news.5.excerpt': 'Подробный разбор системы NPC, ролей, боевого оценщика и планов на будущее.',
+        'news.5.blog_excerpt': 'Глубокое погружение в техническую часть NPC: роли, боевой ИИ, текущие проблемы и планы по улучшению.',
+        'p5.intro1': 'Привет всем! Этот пост кратко осветит некоторые темы, касающиеся фреймворка NPC в Hytale, его текущего состояния, как он выглядит и куда мы хотим его развивать.',
+        'p5.intro_tech': 'Некоторый контент может быть немного техническим, так что смело пропускайте или проглядывайте части, которые вам не интересны. Также, когда дело доходит до систем NPC, есть много всего, так что не ожидайте, что этот пост будет исчерпывающим!',
+
+        'p5.h_where': 'Где мы сейчас',
+        'p5.text_where': 'На данный момент фреймворк NPC поддерживает широкое разнообразие поведений через множество систем, все из которых настраиваются с помощью data-driven ассетов. Вам не нужно знать языки программирования, чтобы настроить их — даже наши самые сложные NPC почти полностью управляются данными.',
+        'p5.text_systems': 'Мы достигаем этого с помощью ряда различных систем, связанных с поведением, но две, которые мы рассмотрим в этом посте, — это "Роли" (сердце наших NPC) и "Оценщик Боевых Действий" (Combat Action Evaluator).',
+
+        'p5.h_docs': 'Документация и Туториал',
+        'p5.text_docs': 'Если вы хотите узнать больше о NPC, у наших друзей из hytalemodding уже есть много отличной документации, и мы предоставили сгенерированный NPC док, а также письменный туториал.',
+        'p5.text_video': 'Вместе с этим туториалом мы сделали серию видео из 6 частей, где рассматриваем некоторые части более детально; для лучшего опыта используйте и то, и другое:',
+        'p5.link_tut1': 'NPC Tutorial Part 1',
+        'p5.link_tut2': 'NPC Tutorial Part 2',
+        'p5.link_tut3': 'NPC Tutorial Part 3',
+        'p5.link_tut4': 'NPC Tutorial Part 4',
+        'p5.link_tut5': 'NPC Tutorial Part 5',
+        'p5.link_tut6': 'NPC Tutorial Part 6',
+
+        'p5.h_roles': 'Роли (Roles)',
+        'p5.text_roles1': 'У каждого NPC есть роль. Это выражение их общего поведения и того, как они будут реагировать на различные стимулы в мире. Изменение всего набора поведения NPC так же просто, как изменение его роли, и мы предоставляем ряд шаблонов с настраиваемыми значениями, которые можно применить для быстрого и эффективного создания новых NPC.',
+        'p5.text_roles2': 'В дополнение к самому поведению, Роль также диктует такие аспекты, как движение NPC, какие предметы он носит, как он выглядит и так далее.',
+        'p5.text_roles3': 'С технической стороны, это поведение представлено концепцией, которую мы называем "списками инструкций". Это не слишком далеко от деревьев решений или деревьев поведения, но с упрощенной семантикой. Каждая инструкция состоит из "сенсора" — элемента, который запрашивает состояние игры, чтобы решить, может ли эта инструкция быть выполнена — а также действий или движений, которые NPC должен предпринять, если эта инструкция выбрана.',
+        'p5.text_roles4': 'Каждая инструкция оценивается по порядку и — если совпадает — выполняется. Если в инструкции не указаны специальные флаги, мы не будем оценивать дальнейшие инструкции в списке. Это гарантирует, что логика внутри NPC проста для отслеживания.',
+        'p5.text_roles5': 'Пока все отдельные элементы (сенсоры, действия, движения) написаны на Java, списки инструкций полностью создаются в JSON. На данном этапе у нас более 150 типов элементов.',
+        'p5.text_sheep_example': 'Вот пример изменения роли Овцы: от поведения домашнего скота (Template_Animal_Neutral) к агрессивному хищнику с помощью Template_Predator.',
+        'p5.text_sheep_aggressive': 'И вот, она уже не милая, а нападает на вас.',
+        'p5.text_sheep_weapon': 'С помощью пары базовых шаблонов можно выдать ей случайное оружие, и мод "Крепкий Орешек: Овца" готов.',
+
+        'p5.h_combat_eval': 'Combat Action Evaluator',
+        'p5.text_combat_eval1': 'Хотя списки инструкций дают гибкость, создание персонажа, который принимает сложные решения, может стать громоздким.',
+        'p5.text_combat_eval2': 'Combat Action Evaluator решает эту задачу, предлагая фреймворк для принятия умных решений в реальном времени.',
+        'p5.text_combat_eval3': 'Каждой атаке назначаются условия (мало HP, враг близко и т.д.), которые оцениваются для выбора лучшего действия.',
+        'p5.text_combat_eval4': 'Например, Скелет-Преторианец может разумно выбирать между блоком, призывом и атакой.',
+        'p5.text_combat_snippet': 'Ниже приведен фрагмент конфигурации условия призыва:',
+        'p5.text_combat_video': 'А вот видео-пример того, как принимаются эти решения:',
+
+        'p5.h_reality': 'Проверка реальностью',
+        'p5.text_reality1': 'Это все звучит довольно продвинуто, верно? Может быть, вы даже поверили, что это готово к выпуску? Ну... нет. Есть еще очень много шероховатостей, отсутствующих функций и областей, требующих значительного улучшения.',
+        'p5.text_reality2': 'С великой силой приходит... потребность в великих инструментах. Мы очень далеко от цели здесь. Есть планы по визуальному редактированию и отладке, но сейчас большая часть настройки NPC выполняется прямо в JSON файлах с помощью текстовых редакторов. Это работает, но это больно.',
+        'p5.text_reality3': 'Мы упоминали кривую обучения, связанную с оценщиком боевых действий, но это применимо практически ко всему, что касается работы с NPC. Есть множество крупных отсутствующих функций: NPC не очень хорошо позиционируют себя в бою; они не используют правильное избегание или стайное поведение; плавающие NPC не могут выйти из воды и наоборот.',
+        'p5.text_perform': 'Естественно, есть потенциал для проблем с производительностью. Мы можем поддерживать относительно большое количество NPC, но предстоит еще много работы, чтобы сделать их более производительными, особенно когда дело доходит до поиска пути.',
+        'p5.text_debt': 'И еще есть весь технический долг, который нужно решить, от NPC, не способных намеренно ломать блоки, до физики NPC, нуждающейся в полной переработке для унификации с системами игрока.',
+
+        'p5.h_bugs': 'Баги, баги повсюду',
+        'p5.text_bugs1': 'Многие члены сообщества указали на множество багов, которые появились в выпущенных кадрах геймплея. С нашим текущим темпом разработки многие из этих кадров уже устарели, и самые критические из этих багов уже исправлены! Однако я хочу специально уделить время, чтобы поговорить немного больше о поиске пути.',
+        'p5.text_pathfind': 'Поиск пути — большая и сложная тема. Когда вы добавляете процедурный, полностью изменяемый блочный мир, это становится еще сложнее. Сейчас наш поиск пути медленный. Мы не можем заранее заполнить мир "точками прыжка", потому что мир может измениться в любой момент.',
+
+        'p5.h_next': 'Что дальше?',
+        'p5.text_next1': 'Инструменты находятся высоко в нашем списке приоритетов. Если мы хотим поддерживать моддеров должным образом, нам нужно дать им инструменты, необходимые для того, чтобы создание NPC было веселым!',
+        'p5.text_next2': 'Мы также должны решить проблемы с поиском пути и движением, разбираясь с техническим долгом, чтобы гарантировать, что мы не создаем узких мест производительности.',
+        'p5.text_next3': 'Добавление большего количества шаблонов также поможет оживить мир. Все это ведет к потенциалу создания настоящих боссов — столкновений, которые доведут все наши PvE системы до абсолютных пределов.',
+
+        'p5.h_debug': 'Фора: отладочные команды',
+        'p5.text_debug1': 'Пока у нас нет визуального редактора или глубокой отладки, мы добавили ряд различных визуализаций, чтобы упростить понимание того, как будут функционировать ваши NPC.',
+        'p5.text_debug2': 'Каждую из этих визуализаций можно включить, переключив определенные флаги отладки NPC:',
+        'p5.code_aim': '/npc debug set VisAiming',
+        'p5.text_aim': 'Визуализирует, куда на самом деле целятся NPC.',
+        'p5.code_targets': '/npc debug set VisMarkedTargets',
+        'p5.text_targets': 'Визуализирует цели.',
+        'p5.code_sensors': '/npc debug set VisSensorRanges',
+        'p5.text_sensors': 'Визуализирует сенсоры (кольца и сектора обзора).',
+        'p5.text_bear_desc': 'На первом скриншоте медведь спит, активен только один сенсор. На втором — у него работают слух, зрение и абсолютный радиус обнаружения. Хотя овцы и попали в радиус (отмечены целями), они вне конуса зрения. Овечье семейство в безопасности!',
+        'p5.code_leash': '/npc debug set VisLeashPosition',
+        'p5.text_leash': 'Визуализирует точку привязи.',
+        'p5.code_flock': '/npc debug set VisFlock',
+        'p5.text_flock': 'Визуализирует стаю (лидера и участников).',
+
+        // Post 6
+        'news.6.title': 'Патч-ноут Hytale - Update 3',
+        'news.6.excerpt': 'Приручение животных, метки на карте, локализация и множество исправлений.',
+        'news.6.blog_excerpt': 'Третье обновление раннего доступа: приручение, косметика, изменения боевки и исправление багов.',
+        'p6.intro': 'Третье обновление Hytale уже здесь, спустя четыре недели после выхода в ранний доступ! Наш ритм релизов в будущем: еженедельные предварительные патчи для тестирования, объединенные в стабильное обновление каждые 2-6 недель.',
+        'p6.intro2': 'Помимо регулярных обновлений, мы создаем "Главы" — крупные контентные дропы, раскрывающие арку Разрушителя Проклятий (Cursebreaker) в режиме Приключения.',
+
+        'p6.h_features': 'Главные нововведения',
+        'p6.ul_features': '<li><b>Приручение животных:</b> Теперь можно приручать дружелюбных животных, если у вас есть их любимая еда. Прирученных можно гладить, кормить, иногда доить или стричь. Они не убегают и приветствуют игрока.</li><li><b>Метки на карте:</b> Создавайте свои метки с именами, иконками и цветами. Делитесь ими в мультиплеере.</li><li><b>Локализация:</b> Добавлены бразильский португальский и русский языки! Огромное спасибо сообществу переводчиков.</li><li><b>Пресеты аватара:</b> Редактируйте, сохраняйте и переключайтесь между 5 вариантами внешности.</li><li><b>Серпы:</b> Добавлены серпы для сбора урожая по площади.</li><li><b>Улучшение скалолазания:</b> Можно двигаться вбок, спрыгивать и вращаться на веревках.</li><li><b>Огонь и Огнемет гоблинов:</b> Новая система распространения огня и оружие "Огнемет гоблинов" (пока только в креативе).</li><li><b>Распространение травы:</b> Добавлено случайное распространение травы.</li><li><b>Anchor UI System:</b> Система для плагинов, позволяющая добавлять UI элементы на экраны клиента (например, карту).</li>',
+
+        'p6.h_avatar': 'Аватар и Косметика',
+        'p6.ul_avatar': '<li><b>Одежда:</b> Твидовая шляпа, Рубашка мага, различные туфли, кеды на платформе, строительная каска, шипастые браслеты, юбки (Плед и Панк). Новые цвета металлов.</li><li><b>Волосы и лицо:</b> 6 новых причесок, 4 вида усов/бороды, новые формы глаз и макияж.</li><li>Штаны (Overpants) переименованы в Legwear.</li>',
+
+        'p6.h_combat': 'Бой и Предметы',
+        'p6.ul_combat': '<li>Исправлен урон и улучшения оружия разных тиров.</li><li>Скорректирована стоимость выносливости для блока.</li><li>Копья теперь стакаются до 5 и их можно метать.</li><li>Улучшена баллистика и точность дальнего боя.</li><li>Луки и арбалеты могут брать стрелы прямо из рюкзака.</li><li><b>Некромантия:</b> Призванные существа не получают урон от призывателя, реагируют на атаки по игроку, стали быстрее и агрессивнее. Добавлен скелет-стрелок.</li><li>Улучшено поведение Жабы-Носорога и переключение целей у NPC.</li>',
+
+        'p6.h_gameplay': 'Геймплей',
+        'p6.ul_gameplay': '<li><b>Карта:</b> Обновлены иконки, имена игроков всегда видны, компас показывает высоту цели.</li><li><b>Инвентарь:</b> "Взять все" в верстаках, Shift-перенос предметов, улучшено колесо быстрого доступа.</li><li><b>Крафт:</b> Снижены требования к Курятнику и Верстаку фермера. Начальные инструменты крафтятся мгновенно. Тесто делается из наполняемых кружек.</li><li><b>Мир:</b> Двери не закрываются, если проход заблокирован. Телепорты требуют отойти перед повторным использованием. Вагонетки не двигаются, если застряли.</li>',
+
+        'p6.h_blocks': 'Блоки и Мир',
+        'p6.ul_blocks': '<li>Вернули Светящийся Вулканический Камень.</li><li>Новые текстуры трещин (Торий, Базальт, Магма, Грязь).</li><li>Варианты блоков лайма (Гравий, Камень, Сталактиты).</li><li>Обновлена текстура Кобальта.</li>',
+
+        'p6.h_content': 'Контент и Встречи',
+        'p6.ul_content': '<li>Сложные спавны в тайге (у рек).</li><li>Новые поселения Чужеземцев (Outlanders).</li><li>Переработаны встречи во всех зонах.</li><li>Зеленая вариация Жабы-Носорога.</li><li>Печь Тир-2 (новая модель и анимации).</li>',
+
+        'p6.h_audio': 'Аудио',
+        'p6.ul_audio': '<li>Обновлены звуки ударов мечом.</li><li>Разделение режимов наушников (Стерео и HRTF).</li><li>Увеличен лимит звуков открывания печей.</li>',
+
+        'p6.h_ui': 'UI и QoL',
+        'p6.ul_ui': '<li>Уведомления о сне других игроков.</li><li>Настройка размера окна.</li><li>Улучшены подсказки клавиш.</li><li>Сортировка варпов в телепорте по алфавиту.</li><li>Поддержка запасных шрифтов (включая Noto Sans для кириллицы).</li><li>Улучшены тултипы предметов для локализации.</li>',
+
+        'p6.h_modding': 'Моддинг и Инструменты',
+        'p6.ul_modding': '<li>Включение/отключение модов из UserData.</li><li>Проверка версий плагинов.</li><li>Новые ассет-паки включаются по умолчанию.</li><li>Команда /layer в Creative Tools.</li><li>Undo/Redo для Paste tool.</li><li>Визуализация 3D аудио и сенсоров NPC для дебага.</li>',
+
+        'p6.h_perf': 'Производительность и Баги',
+        'p6.ul_perf': '<li><b>Безопасность:</b> Исправлены уязвимости обхода директорий.</li><li><b>Производительность:</b> Улучшена генерация мира, оптимизированы ассеты клиента.</li><li><b>Краши:</b> Исправлены вылеты при отмене действий в креативе, сохранении скинов, запуске на Linux без Nautilus.</li><li><b>Мир:</b> Исправлено размещение блоков, невидимые биомы, парящие яблони, распространение огня выше 256 блока.</li><li><b>Геймплей:</b> Исправлены хитбоксы урожая, предметы без компонентов, ловля рыбы в лаве.</li><li><b>Аудио:</b> Исправлено панорамирование звуков воды и HRTF.</li>',
     },
     'en': {
         'nav.home': 'Home',
@@ -333,6 +443,8 @@ const translations = {
         'date.jan26': 'January 2026',
         'date.dec25': 'December 2025',
         'date.nov25': 'November 2025',
+        'date.feb17': 'February 17, 2026',
+        'date.feb11': 'February 11, 2026',
         'date.jan28': 'January 28, 2026',
         'date.jan24': 'January 24, 2026',
         'date.jan17': 'January 17, 2026',
@@ -341,6 +453,7 @@ const translations = {
         'news.read_more_long': 'Read More',
         // Tags
         'tag.hotfix': 'Hotfix',
+        'tag.dev': 'Development',
         'tag.update': 'Update',
         'tag.event': 'Event',
         // Sidebar Pro
@@ -447,7 +560,114 @@ const translations = {
         'p4.text_combat': 'Fun mobile combat with diverse weapons and a farming system with many crops.',
         'p4.h_thanks': 'Thank You',
         'p4.text_thanks': 'All of us at Hypixel Studios are excited to finally release Hytale to the community that has endured so many ups and downs. Your constant excitement made this possible. Words are not enough to express our gratitude.',
-        'p4.text_final': 'A big thank you from the whole team!'
+        'p4.text_final': 'A big thank you from the whole team!',
+
+        // Post 5
+        'news.5.title': 'NPC Technical Rundown',
+        'news.5.excerpt': 'A detailed look at the NPC framework, roles, combat evaluator, and future plans.',
+        'news.5.blog_excerpt': 'Deep dive into NPC tech: roles, combat AI, current issues, and improvement plans.',
+        'p5.intro1': 'Hello everyone! This post is going to briefly cover some topics relating to Hytale\'s NPC framework, its current state, how it looks, and where we want to take it.',
+        'p5.intro_tech': 'Some of the content might be a bit more technical, so feel free to skip through or skim the parts that don\'t interest you. There\'s also a lot to cover when it comes to NPC-related systems, so don\'t expect this one post to be exhaustive!',
+
+        'p5.h_where': 'Where we are',
+        'p5.text_where': 'As it stands, the NPC framework supports a wide variety of behaviours across multiple systems, all of which are configurable using data-driven assets. You don\'t need to know any programming languages to be able to set them up - even our most complex NPCs are almost entirely data-driven.',
+        'p5.text_systems': 'We achieve this through a number of different behaviour-related systems, but the two we\'ll cover in this post are \'Roles\' (the heart of our NPCs) and the \'Combat Action Evaluator\'.',
+
+        'p5.h_docs': 'Documentation and Tutorial',
+        'p5.text_docs': 'If you want to learn more about NPCs, our friends at hytalemodding have a lot of great documentation already and we provided the generated NPC one as well as a written tutorial.',
+        'p5.text_video': 'Together with this tutorial we made a 6 part video series, where we cover some parts of it in extra detail; for the best experience use both:',
+        'p5.link_tut1': 'NPC Tutorial Part 1',
+        'p5.link_tut2': 'NPC Tutorial Part 2',
+        'p5.link_tut3': 'NPC Tutorial Part 3',
+        'p5.link_tut4': 'NPC Tutorial Part 4',
+        'p5.link_tut5': 'NPC Tutorial Part 5',
+        'p5.link_tut6': 'NPC Tutorial Part 6',
+
+        'p5.h_roles': 'Roles',
+        'p5.text_roles1': 'Every NPC has a role. This is the expression of their general behaviour and how they\'ll react to different stimuli in the world. Changing an NPC\'s entire behaviour set is as simple as changing its role, and we provide a number of templates with customizable values that can be applied to make creating new NPCs quick and efficient.',
+        'p5.text_roles2': 'In addition to the behaviour itself, the Role also dictates aspects such as how an NPC will move, what items it carries, what it looks like, and so on.',
+        'p5.text_roles3': 'On the technical side, this behaviour is represented by a concept we refer to as \'instruction lists\'. This isn\'t too far removed from decision trees or behaviour trees, but with some of the semantics simplified. Each instruction is made up of a \'sensor\' - an element that queries the state of the game to decide if this instruction can be executed - as well as the actions or motions the NPC should take if this instruction is selected.',
+        'p5.text_roles4': 'Each instruction is evaluated in order and - if matched - executed. Unless specific flags are included in the instruction, we won\'t evaluate any further instructions in the list. This ensures that the flow of logic within the NPC is easy to follow.',
+        'p5.text_roles5': 'While all the individual element types (sensors, actions, motions, etc) are written in Java, the instruction lists are constructed entirely in JSON. At this stage we have more than 150 different element types.',
+        'p5.text_sheep_example': 'Here is an example of changing the Sheep role to go from a Livestock behavior enabled by Template_Animal_Neutral to being aggressive with the help of Template_Predator.',
+        'p5.text_sheep_aggressive': 'And it goes from being fond of you to attacking.',
+        'p5.text_sheep_weapon': 'With some basic templates we created, you can also give it a random Weapon and you are ready for Die Hard Sheep mod',
+
+        'p5.h_combat_eval': 'The Combat Action Evaluator',
+        'p5.text_combat_eval1': 'Though instruction lists already give designers a great deal of flexibility to configure their NPCs and implement combat behaviours, crafting a character that does more than few basic attacks and needs to make some sort of decision about when to use certain attacks quickly becomes cumbersome.',
+        'p5.text_combat_eval2': 'The combat action evaluator exists to address these needs, by offering a companion framework to an NPCs central behaviour that can make smart moment-to-moment decisions about its state, the state of the world around it, and its enemies or allies.',
+        'p5.text_combat_eval3': 'Each possible attack (or other combat action) is assigned a set of conditions that designate the best time to use it - when HP is low; when the enemy is close; when a player is trying to sneak around the back. These conditions are then evaluated and each action is weighed against the others.',
+        'p5.text_combat_eval4': 'For example, the Skeleton Praetorian can decide between using different abilities with some degree of intelligence: blocking, summoning at low health, and charging, alongside basic attacks.',
+        'p5.text_combat_snippet': 'Below is a snippet that shows part of the configuration for the summon ability condition:',
+        'p5.text_combat_video': 'And here is a video example of those decisions:',
+
+        'p5.h_reality': 'The reality check',
+        'p5.text_reality1': 'This all sounds pretty far along, right? Maybe you could even believe it was shippable? Well…no. There are still very many rough edges, missing features, and areas in need of vast improvement.',
+        'p5.text_reality2': 'With great power comes…the need for great tooling. We\'re very far off the mark here. There are plans for visual editing and debugging, but right now most NPC configuration is done directly in JSON files using text editors. It\'s workable, but painful.',
+        'p5.text_reality3': 'We mentioned the learning curve associated with the combat action evaluator, but that applies pretty much everywhere when it comes to working with NPCs as well. There are plenty of major missing features as well: NPCs don\'t position themselves very well in combat; they don\'t use proper avoidance or flocking; swimming NPCs can\'t leave the water and vice versa.',
+        'p5.text_perform': 'Naturally, the potential for performance issues abounds. We can support a relatively large number of NPCs but there\'s much work to be done in making them more performant, particularly when it comes to pathfinding.',
+        'p5.text_debt': 'And then there\'s all the technical debt that needs to be solved, from NPCs not being able to deliberately break blocks outside of projectile-based explosions due to certain non-NPC system constraints that need to be revised, to NPC physics needing a complete rework to unify it properly with player systems.',
+
+        'p5.h_bugs': 'Bugs, bugs everywhere',
+        'p5.text_bugs1': 'Many community members have pointed out the plethora of bugs that cropped up in released gameplay footage. With our current development pace, much of that footage is already outdated and the most critical of those bugs have already been fixed! However, I do specifically want to take a moment to talk a bit more about pathfinding.',
+        'p5.text_pathfind': 'Pathfinding is a large and complex topic. When you add a procedural fully-modifiable block-based world to the mix, this becomes even more complex. This means our pathfinding is currently slow. We can\'t pre-populate the world with \'jump points\' because the world could change at any time.',
+
+        'p5.h_next': 'So what\'s next?',
+        'p5.text_next1': 'Tooling is high up on our priority list. If we want to support modders properly, we need to give them the tools they need to make creating NPCs fun!',
+        'p5.text_next2': 'We also need to address the issues with pathfinding and movement while dealing with technical debt to ensure that we\'re not creating performance bottlenecks.',
+        'p5.text_next3': 'Adding more templates will also help to liven up the world a bit more. All of this leads towards the potential for creating proper bosses - encounters that will push all our PvE systems to their absolute limits.',
+
+        'p5.h_debug': 'A headstart: debug commands',
+        'p5.text_debug1': 'While we don\'t have a visual editor or deep debugging just yet, we\'ve added a number of different visualisations to make it easier to understand how your NPCs will function.',
+        'p5.text_debug2': 'Each of these visualisations can be enabled by toggling certain NPC debug flags on individual NPCs:',
+        'p5.code_aim': '/npc debug set VisAiming',
+        'p5.text_aim': 'You can use it to determine what the NPCs actually shoot at.',
+        'p5.code_targets': '/npc debug set VisMarkedTargets',
+        'p5.text_targets': 'Visualises all current marked targets locked onto by the NPC.',
+        'p5.code_sensors': '/npc debug set VisSensorRanges',
+        'p5.text_sensors': 'Visualises all currently checked Mob sensor ranges as rings and view sectors.',
+        'p5.text_bear_desc': 'The first screenshot shows the Bear sleeping and only having one sensor active. On the second screenshot the Bear has hearing, vision, and absolute detection range. Even though the Sheep are detected by the vision radius (they have target marks) they are outside of the view cone. The sheep family is still safe!',
+        'p5.code_leash': '/npc debug set VisLeashPosition',
+        'p5.text_leash': 'Visualises the NPC\'s current leash position.',
+        'p5.code_flock': '/npc debug set VisFlock',
+        'p5.text_flock': 'Visualises the flock (NPC group) associated with this NPC.',
+
+        // Post 6
+        'news.6.title': 'Hytale Patch Notes - Update 3',
+        'news.6.excerpt': 'Animal taming, map markers, localization, and a host of fixes and improvements.',
+        'news.6.blog_excerpt': 'Update 3 brings animal taming, map markers, localization, and many bug fixes.',
+        'p6.intro': 'Hytale\'s 3rd update is here, four weeks into Early Access! Our release rhythm going forward: weekly pre-release patches for testing, bundled into a stable update every 2 to 6 weeks.',
+        'p6.intro2': 'Beyond regular updates, we\'re building chapters, larger content drops that unfold the Cursebreaker arc in Exploration Mode.',
+
+        'p6.h_features': 'Headline Features',
+        'p6.ul_features': '<li><b>Animal Taming:</b> Tame friendly animals with their favorite food. Pet, feed, milk, shear, or mount them.</li><li><b>Map Markers:</b> Create custom markers with icons and colors. Share in multiplayer.</li><li><b>Localization:</b> Added Brazilian-Portuguese and Russian. Huge thanks to community translators!</li><li><b>Avatar Presets:</b> Save and swap up to 5 customizations.</li><li><b>Sickles:</b> Harvest multiple crops at once.</li><li><b>Climbing Overhaul:</b> Side-stepping, dropping down, and rotating on ropes.</li><li><b>Fire Spread & Flamethrower:</b> New fire fluid ticker and Goblin Flamethrower (Creative only).</li><li><b>Grass Spreading:</b> Random block ticking added.</li><li><b>Anchor UI System:</b> Allows plugins to add UI elements to client screens.</li>',
+
+        'p6.h_avatar': 'Avatar & Cosmetics',
+        'p6.ul_avatar': '<li><b>New Items:</b> Tweed Hat, Mage Shirt, various shoes, Construction Hard Hat, Spiked Bracelets, new Skirts.</li><li><b>Hair & Face:</b> 6 new Haircuts, 4 Facial Hair styles, new Eye Shapes and Makeup.</li><li>Overpants renamed to Legwear.</li>',
+
+        'p6.h_combat': 'Combat & Items',
+        'p6.ul_combat': '<li>Adjusted damage and upgrade values.</li><li>Fixed guarding stamina costs.</li><li>Spears stack to 5 and are throwable.</li><li>Improved ranged ballistics and accuracy.</li><li>Bows use ammo from backpack.</li><li><b>Necromancy:</b> Summons don\'t take friendly fire, respond to attacks on player, are faster/more aggressive. Added ranged skeleton.</li><li>Refactored Rhino Toad attacks and NPC targeting.</li>',
+
+        'p6.h_gameplay': 'Gameplay',
+        'p6.ul_gameplay': '<li><b>Map:</b> Updated icons, player names always visible, vertical distance indicators on compass.</li><li><b>Inventory:</b> "Take All" button, Shift-drag transfer, improved utility wheel.</li><li><b>Crafting:</b> Reduced tiers for Chicken Coop and Farmers Bench. Instant craft for crude tools. Dough uses refillable Tankards.</li><li><b>World:</b> Doors don\'t close if blocked. Teleporters require clearance. Minecarts don\'t move when stuck.</li>',
+
+        'p6.h_blocks': 'Blocks & World',
+        'p6.ul_blocks': '<li>Re-added Incandescent Volcanic Rock.</li><li>New crack textures (Thorium, Basalt, Magma, Mud).</li><li>Lime block variants (Gravel, Rock, Rubble).</li><li>Updated Cobalt texture.</li>',
+
+        'p6.h_content': 'Content & Encounters',
+        'p6.ul_content': '<li>Complex spawns in Taiga.</li><li>New Outlander village environment.</li><li>Refactored encounters.</li><li>Green Rhino Toad variant.</li><li>Tier 2 Furnace model and animations.</li>',
+
+        'p6.h_audio': 'Audio',
+        'p6.ul_audio': '<li>Updated sword sounds.</li><li>Separated Stereo Headphone and HRTF modes.</li><li>Increased furnace sound limit.</li>',
+
+        'p6.h_ui': 'UI & Quality of Life',
+        'p6.ul_ui': '<li>Sleep notifications.</li><li>Window Size option.</li><li>Improved keybind tooltips.</li><li>Teleporter warps sorted.</li><li>Font Fallback Support (including Noto Sans for Cyrillic).</li><li>Improved Localization support in tooltips.</li>',
+
+        'p6.h_modding': 'Modding & Tools',
+        'p6.ul_modding': '<li>Mod enable/disable support.</li><li>Plugin version checks.</li><li>New asset packs enabled by default.</li><li>/layer command in Creative.</li><li>Undo/Redo for Paste tool.</li><li>Debug visualization: 3D audio, NPC sensors, Leash, Flock.</li>',
+
+        'p6.h_perf': 'Performance & Bug Fixes',
+        'p6.ul_perf': '<li><b>Security:</b> Fixed directory traversal vulnerabilities.</li><li><b>Performance:</b> Improved world gen, optimized client assets.</li><li><b>Crashes:</b> Fixed crashes in creative tools, skin saving, and Linux folder opening.</li><li><b>World:</b> Fixed filler blocks, mis-predictions, floating trees, infinite fire spread.</li><li><b>Gameplay:</b> Fixed crop hitboxes, pickup items, fishing in lava.</li><li><b>Audio:</b> Fixed water emitter panning and HRTF issues.</li>',
     }
 };
 
