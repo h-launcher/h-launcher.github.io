@@ -4,54 +4,66 @@
       "title": "Hytale Patch Notes - Update 3",
       "date": "February 17th 2026",
       "description": "Приручение животных, метки на карте, локализация и множество исправлений.",
+      "description_en": "Animal taming, map markers, localization, and a host of fixes and improvements.",
       "image": "https://cdn.hytale.com/variants/blog_thumb_c45813e9df083c6cf5657213c2e1884e_hytale2026_02_17_14_23_18_1.png",
       "isMain": true,
       "tag": "ОБНОВЛЕНИЕ",
+      "tag_en": "UPDATE",
       "url": "https://h-launcher.github.io/news/post-6.html"
     },
     {
       "title": "NPC Technical Rundown",
       "date": "February 11th 2026",
       "description": "Глубокое погружение в технологии NPC: роли, боевой ИИ и планы на будущее.",
+      "description_en": "Deep dive into NPC tech: roles, combat AI, current issues, and improvement plans.",
       "image": "https://cdn.hytale.com/variants/blog_thumb_3d990bbfdf6759d3efb601928e781c8f_cover.png",
       "isMain": false,
       "tag": "РАЗРАБОТКА",
+      "tag_en": "DEVELOPMENT",
       "url": "https://h-launcher.github.io/news/post-5.html"
     },
     {
       "title": "Hotfixes: January 2026",
       "date": "January 27th 2026",
       "description": "Исправлены проблемы с отображением теней, уменьшены задержки на картах NVIDIA. Улучшена стабильность серверов и логика телепортов.",
+      "description_en": "Fixed recurring shadow rendering issues, reduced micro-stuttering on NVIDIA GPUs. Improved server stability and teleporter logic.",
       "image": "https://h-launcher.github.io/news/hotfix_jan_2026.png",
       "isMain": false,
       "tag": "HOTFIX",
+      "tag_en": "HOTFIX",
       "url": "https://h-launcher.github.io/news/post-1.html"
     },
     {
       "title": "Hytale Patch Notes - Update 2",
       "date": "January 24th 2026",
       "description": "Новые опции кастомизации аватара: маски бандитов, повязки на глаза, клыки вампира и орка. Обновлены визуальные эффекты причесок и добавлена новая броня.",
+      "description_en": "New avatar customization options, WorldGen V2, farming improvements, and eternal crops.",
       "image": "https://h-launcher.github.io/news/patch_update_2.png",
       "isMain": false,
       "tag": "ОБНОВЛЕНИЕ",
+      "tag_en": "UPDATE",
       "url": "https://h-launcher.github.io/news/post-2.html"
     },
     {
       "title": "Hytale Patch Notes - Update 1",
       "date": "January 17th 2026",
       "description": "Первое крупное контентное обновление: в мир добавлены динозавры, а также внедрена серия улучшений качества жизни и исправлений багов.",
+      "description_en": "First major update: Dinosaurs in underground jungles, quality of life improvements, and bug fixes.",
       "image": "https://h-launcher.github.io/news/patch_update_1.png",
       "isMain": false,
       "tag": "ОБНОВЛЕНИЕ",
+      "tag_en": "UPDATE",
       "url": "https://h-launcher.github.io/news/post-3.html"
     },
     {
       "title": "Hytale is finally here!",
       "date": "January 13th 2026",
       "description": "Момент настал — Hytale официально вышла в ранний доступ! Мы сдержали обещание запуститься без задержек после возвращения независимости студии.",
+      "description_en": "The moment has arrived — Hytale has officially entered Early Access! We kept our promise to launch without delays.",
       "image": "https://h-launcher.github.io/news/release_day.png",
       "isMain": false,
       "tag": "РЕЛИЗ",
+      "tag_en": "RELEASE",
       "url": "https://h-launcher.github.io/news/post-4.html"
     }
   ],
