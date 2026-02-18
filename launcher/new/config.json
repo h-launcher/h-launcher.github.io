@@ -1,11 +1,29 @@
 {
   "news": [
     {
+      "title": "Hytale Patch Notes - Update 3",
+      "date": "February 17th 2026",
+      "description": "Приручение животных, метки на карте, локализация и множество исправлений.",
+      "image": "https://cdn.hytale.com/variants/blog_thumb_c45813e9df083c6cf5657213c2e1884e_hytale2026_02_17_14_23_18_1.png",
+      "isMain": true,
+      "tag": "ОБНОВЛЕНИЕ",
+      "url": "https://h-launcher.github.io/news/post-6.html"
+    },
+    {
+      "title": "NPC Technical Rundown",
+      "date": "February 11th 2026",
+      "description": "Глубокое погружение в технологии NPC: роли, боевой ИИ и планы на будущее.",
+      "image": "https://cdn.hytale.com/variants/blog_thumb_3d990bbfdf6759d3efb601928e781c8f_cover.png",
+      "isMain": false,
+      "tag": "РАЗРАБОТКА",
+      "url": "https://h-launcher.github.io/news/post-5.html"
+    },
+    {
       "title": "Hotfixes: January 2026",
       "date": "January 27th 2026",
       "description": "Исправлены проблемы с отображением теней, уменьшены задержки на картах NVIDIA. Улучшена стабильность серверов и логика телепортов.",
       "image": "https://h-launcher.github.io/news/hotfix_jan_2026.png",
-      "isMain": true,
+      "isMain": false,
       "tag": "HOTFIX",
       "url": "https://h-launcher.github.io/news/post-1.html"
     },
