@@ -40,18 +40,102 @@
   "versions": {
     "release": [
       {
+        "id": "10",
+        "name": "2026.02.18-3b8fff95"
+      },
+      {
         "id": "8",
         "name": "2026.02.06-aa1b071c2"
       },
       {
-        "id": "10",
-        "name": "2026.02.18-3b8fff95"
+        "id": "7",
+        "name": "2026.01.28-87d03be09"
+      },
+      {
+        "id": "6",
+        "name": "2026.01.27-734d39026"
+      },
+      {
+        "id": "5",
+        "name": "2026.01.24-6e2d4fc36"
+      },
+      {
+        "id": "4",
+        "name": "2026.01.17-4b0f30090"
+      },
+      {
+        "id": "3",
+        "name": "2026.01.15-c04fdfe10"
+      },
+      {
+        "id": "2",
+        "name": "2026.01.13-50e69c385"
       }
     ],
     "snapshot": [
       {
-        "id": "22",
-        "name": "2026.02.11-255364B8E"
+        "id": "20",
+        "name": "2026.02.06-0baf7c5aa (pre-release)"
+      },
+      {
+        "id": "17",
+        "name": "2026.01.29-301e13929 (pre-release)"
+      },
+      {
+        "id": "16",
+        "name": "2026.01.28-87d03be09 (pre-release)"
+      },
+      {
+        "id": "15",
+        "name": "2026.01.27-734d39026 (pre-release)"
+      },
+      {
+        "id": "14",
+        "name": "2026.01.26-57a62ca8d (pre-release)"
+      },
+      {
+        "id": "13",
+        "name": "2026.01.26-9bf507572 (pre-release)"
+      },
+      {
+        "id": "12",
+        "name": "2026.01.23-6e2d4fc36 (pre-release)"
+      },
+      {
+        "id": "11",
+        "name": "2026.01.23-d5ecebca9 (pre-release)"
+      },
+      {
+        "id": "10",
+        "name": "2026.01.22-6f8bdbdc4 (pre-release)"
+      },
+      {
+        "id": "9",
+        "name": "2026.01.22-a60fdd027 (pre-release)"
+      },
+      {
+        "id": "8",
+        "name": "2026.01.17-a4cc0e7dd (pre-release)"
+      },
+      {
+        "id": "7",
+        "name": "2026.01.17-4b0f30090 (pre-release)"
+      },
+      {
+        "id": "6",
+        "name": "2026.01.16-5d02071f7 (pre-release)"
+      },
+      {
+        "id": "5",
+        "name": "2026.01.16-c508b9acd (pre-release)"
+      },
+      {
+        "id": "4",
+        "name": "2026.01.15-c04fdfe10 (pre-release)"
+      },
+      {
+        "id": "3",
+        "name": "2026.01.14-3e7a0ba6c (pre-release)"
       }
     ]
   },
